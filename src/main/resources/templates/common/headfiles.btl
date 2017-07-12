@@ -1,0 +1,10 @@
+<link rel="stylesheet" type="text/css" href="/js/jquery/easyui/themes/metro-orange/easyui.css">
+<link rel="stylesheet" type="text/css" href="/js/jquery/easyui/themes/icon.css">
+<script type="text/javascript" src="/js/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="/js/jquery/easyui/jquery.easyui.min.js"></script>
+<script type="text/javascript" src="/js/jquery/easyui-ext/loadmask/loadmask.js"></script>
+<script type="text/javascript" src="/js/jquery/easyui/locale/easyui-lang-zh_CN.js"></script>
+<script type="text/javascript" src="/js/jquery/easyui-ext/datagridview/datagrid-detailview.js"></script>
+<script type="text/javascript" src="/js/jquery/easyui-ext/formatter/datagrid-formatter-time.js"></script>
+<script type="text/javascript" src="/js/jquery/easyui-ext/formatter/datebox-formatter.js"></script>
+<script type="text/javascript" src="/js/jquery/easyui-ext/utils/dateformatter.js"></script>

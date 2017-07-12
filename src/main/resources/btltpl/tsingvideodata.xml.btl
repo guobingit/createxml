@@ -1,0 +1,156 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<collection xmlns="http://www.loc.gov/MARC21/slim"
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xsi:schemaLocation="http://www.loc.gov/MARC21/slim
+http://www.loc.gov/standards/marcxml/schema/MARC21slim.xsd">
+    <%for(ts in data){%>
+    <record xmlns="http://www.loc.gov/MARC21/slim"
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xsi:schemaLocation="http://www.loc.gov/MARC21/slim
+http://www.loc.gov/standards/marcxml/schema/MARC21slim.xsd">
+        <leader>01840nam0 2200433 450</leader>
+        <controlfield tag="LDR">01840nam0 2200433 450</controlfield>
+        <controlfield tag="000">0808800554</controlfield>
+        <controlfield tag="001">${ts.t_001}</controlfield>
+        <controlfield tag="005">20081215000000.0</controlfield>
+        <%if(!isEmpty(ts.t_100a)){%>
+        <datafield tag="100" ind1=" " ind2=" ">
+            <subfield code="a">${@org.apache.commons.lang3.StringEscapeUtils.escapeXml10(ts.t_100a)}</subfield>
+        </datafield>
+        <%}%>
+        <%if(!isEmpty(ts.t_101a)){%>
+        <datafield tag="101" ind1=" " ind2=" ">
+            <subfield code="a">${@org.apache.commons.lang3.StringEscapeUtils.escapeXml10(ts.t_101a)}</subfield>
+        </datafield>
+        <%}%>
+        <%if(!isEmpty(ts.t_102a) || !isEmpty(ts.t_102b)){%>
+        <datafield tag="102" ind1=" " ind2=" ">
+            <%if(!isEmpty(ts.t_102a)){%>
+            <subfield code="a">${@org.apache.commons.lang3.StringEscapeUtils.escapeXml10(ts.t_102a)}</subfield>
+            <%}%>
+            <%if(!isEmpty(ts.t_102b)){%>
+            <subfield code="a">${@org.apache.commons.lang3.StringEscapeUtils.escapeXml10(ts.t_102b)}</subfield>
+            <%}%>
+        </datafield>
+        <%}%>
+        <%if(!isEmpty(ts.t_115a)){%>
+        <datafield tag="115" ind1=" " ind2=" ">
+            <subfield code="a">${@org.apache.commons.lang3.StringEscapeUtils.escapeXml10(ts.t_115a)}</subfield>
+        </datafield>
+        <%}%>
+        <%if(!isEmpty(ts.t_200a) || !isEmpty(ts.t_200b) || !isEmpty(ts.t_200f) || !isEmpty(ts.t_200h)){%>
+        <datafield tag="200" ind1=" " ind2=" ">
+            <%if(!isEmpty(ts.t_200a)){%>
+            <subfield code="a">${@org.apache.commons.lang3.StringEscapeUtils.escapeXml10(ts.t_200a)}</subfield>
+            <%}%>
+            <%if(!isEmpty(ts.t_200b)){%>
+            <subfield code="b">${@org.apache.commons.lang3.StringEscapeUtils.escapeXml10(ts.t_200b)}</subfield>
+            <%}%>
+            <%if(!isEmpty(ts.t_200f)){%>
+            <subfield code="f">${@org.apache.commons.lang3.StringEscapeUtils.escapeXml10(ts.t_200f)}</subfield>
+            <%}%>
+            <%if(!isEmpty(ts.t_200h)){%>
+            <subfield code="h">${@org.apache.commons.lang3.StringEscapeUtils.escapeXml10(ts.t_200h)}</subfield>
+            <%}%>
+        </datafield>
+        <%}%>
+        <%if(!isEmpty(ts.t_210a) || !isEmpty(ts.t_210c) || !isEmpty(ts.t_210d)){%>
+        <datafield tag="210" ind1=" " ind2=" ">
+            <%if(!isEmpty(ts.t_210a)){%>
+            <subfield code="a">${@org.apache.commons.lang3.StringEscapeUtils.escapeXml10(ts.t_210a)}</subfield>
+            <%}%>
+            <%if(!isEmpty(ts.t_210c)){%>
+            <subfield code="c">${@org.apache.commons.lang3.StringEscapeUtils.escapeXml10(ts.t_210c)}</subfield>
+            <%}%>
+            <%if(!isEmpty(ts.t_210d)){%>
+            <subfield code="d">${@org.apache.commons.lang3.StringEscapeUtils.escapeXml10(ts.t_210d)}}</subfield>
+            <%}%>
+        </datafield>
+        <%}%>
+        <%if(!isEmpty(ts.t_215a) || !isEmpty(ts.t_215c)){%>
+        <datafield tag="215" ind1=" " ind2=" ">
+            <%if(!isEmpty(ts.t_215a)){%>
+            <subfield code="a">${@org.apache.commons.lang3.StringEscapeUtils.escapeXml10(ts.t_215a)}</subfield>
+            <%}%>
+            <%if(!isEmpty(ts.t_215c)){%>
+            <subfield code="c">${@org.apache.commons.lang3.StringEscapeUtils.escapeXml10(ts.t_215c)}</subfield>
+            <%}%>
+        </datafield>
+        <%}%>
+        <%if(!isEmpty(ts.t_225a)){%>
+        <datafield tag="225" ind1="2" ind2=" ">
+            <subfield code="a">${@org.apache.commons.lang3.StringEscapeUtils.escapeXml10(ts.t_225a)}</subfield>
+        </datafield>
+        <%}%>
+        <datafield tag="306" ind1=" " ind2=" ">
+            <subfield code="a">由北京世纪超星信息技术有限公司制作</subfield>
+        </datafield>
+        <%if(!isEmpty(ts.t_314a)){%>
+        <datafield tag="314" ind1=" " ind2=" ">
+            <subfield code="a">${@org.apache.commons.lang3.StringEscapeUtils.escapeXml10(ts.t_314a)}</subfield>
+        </datafield>
+        <%}%>
+        <%if(!isEmpty(ts.t_322a)){%>
+        <datafield tag="322" ind1=" " ind2=" ">
+            <subfield code="a">${@org.apache.commons.lang3.StringEscapeUtils.escapeXml10(ts.t_322a)}</subfield>
+        </datafield>
+        <%}%>
+        <datafield tag="325" ind1=" " ind2=" ">
+            <subfield code="a">电子复制品</subfield>
+        </datafield>
+        <%if(!isEmpty(ts.t_330a)){%>
+        <datafield tag="330" ind1=" " ind2=" ">
+            <subfield code="a">${@org.apache.commons.lang3.StringEscapeUtils.escapeXml10(ts.t_330a)}</subfield>
+        </datafield>
+        <%}%>
+        <%if(!isEmpty(ts.t_4101) || !isEmpty(ts.t_410a)){%>
+        <datafield tag="410" ind1=" " ind2=" ">
+            <%if(!isEmpty(ts.t_4101)){%>
+            <subfield code="1">${@org.apache.commons.lang3.StringEscapeUtils.escapeXml10(ts.t_4101)}</subfield>
+            <%}%>
+            <%if(!isEmpty(ts.t_410a)){%>
+            <subfield code="a">${@org.apache.commons.lang3.StringEscapeUtils.escapeXml10(ts.t_410a)}</subfield>
+            <%}%>
+        </datafield>
+        <%}%>
+        <%if(!isEmpty(ts.t_610a)){%>
+        <datafield tag="610" ind1=" " ind2=" ">
+            <subfield code="a">${@org.apache.commons.lang3.StringEscapeUtils.escapeXml10(ts.t_610a)}</subfield>
+        </datafield>
+        <%}%>
+        <%if(!isEmpty(ts.t_7014) || !isEmpty(ts.t_701a)){%>
+        <datafield tag="701" ind1=" " ind2=" ">
+            <%if(!isEmpty(ts.t_7014)){%>
+            <subfield code="1">${@org.apache.commons.lang3.StringEscapeUtils.escapeXml10(ts.t_7014)}</subfield>
+            <%}%>
+            <%if(!isEmpty(ts.t_701a)){%>
+            <subfield code="a">${@org.apache.commons.lang3.StringEscapeUtils.escapeXml10(ts.t_701a)}</subfield>
+            <%}%>
+        </datafield>
+        <%}%>
+        <%if(!isEmpty(ts.t_801a) || !isEmpty(ts.t_801b) || !isEmpty(ts.t_801c)){%>
+        <datafield tag="801" ind1=" " ind2=" ">
+            <%if(!isEmpty(ts.t_801a)){%>
+            <subfield code="a">${@org.apache.commons.lang3.StringEscapeUtils.escapeXml10(ts.t_801a)}</subfield>
+            <%}%>
+            <%if(!isEmpty(ts.t_801b)){%>
+            <subfield code="b">${@org.apache.commons.lang3.StringEscapeUtils.escapeXml10(ts.t_801b)}</subfield>
+            <%}%>
+            <%if(!isEmpty(ts.t_801c)){%>
+            <subfield code="c">${@org.apache.commons.lang3.StringEscapeUtils.escapeXml10(ts.t_801c)}</subfield>
+            <%}%>
+        </datafield>
+        <%}%>
+        <%if(!isEmpty(ts.t_856u) || !isEmpty(ts.t_856z)){%>
+        <datafield tag="856" ind1=" " ind2=" ">
+            <%if(!isEmpty(ts.t_856u)){%>
+            <subfield code="u">${@org.apache.commons.lang3.StringEscapeUtils.escapeXml10(ts.t_856u)}</subfield>
+            <%}%>
+            <%if(!isEmpty(ts.t_856z)){%>
+            <subfield code="z">${@org.apache.commons.lang3.StringEscapeUtils.escapeXml10(ts.t_856z)}</subfield>
+            <%}%>
+        </datafield>
+        <%}%>
+    </record>
+    <%}%>
+</collection>
